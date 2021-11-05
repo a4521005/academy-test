@@ -196,7 +196,7 @@ describe('BenQ Academy - Pass the test',()=>{
         const downloadUrl = await page.url()
         expect(downloadUrl).to.include('/certified/download/QBMDQX')//斷言:此page的url必須包含/certified/download/QBMDQX
         console.log(downloadUrl)
-        console.log("try",downloadUrl)
+        console.log("try1",downloadUrl)
         await shouldExist(page,'#app > div > div:nth-child(2) > div > div > div:nth-child(1) > img')//Certification
         await shouldExist(page,'#app > div > div:nth-child(2) > div > div > div:nth-child(2) > div > div > a')//download button
         await page.waitForSelector('#app > div > div:nth-child(2) > div > div > div:nth-child(2) > div > ul') //share button
